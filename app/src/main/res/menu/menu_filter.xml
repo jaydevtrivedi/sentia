@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fantasy_points"
+        android:title="@string/fantasy_points" />
+    <item
+        android:id="@+id/tackles"
+        android:title="@string/tackles" />
+    <item
+        android:id="@+id/runs"
+        android:title="@string/runs" />
+    <item
+        android:id="@+id/run_metres"
+        android:title="@string/run_metres" />
+
+</menu>

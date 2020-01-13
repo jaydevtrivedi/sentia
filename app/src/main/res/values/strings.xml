@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">sentia</string>
+
+    <!--    overview header strings -->
+    <string name="top_performing_players">Top Performing Players</string>
+
+    <!--    menu strings -->
+    <string name="fantasy_points">Fantasy Points</string>
+    <string name="tackles">Tackles</string>
+    <string name="runs">Runs</string>
+    <string name="run_metres">Run Metres</string>
+
+    <!--    detail header strings -->
+    <string name="last_match_stats">Last Match Stats</string>
+    <string name="errors">Errors</string>
+    <string name="goals">Goals</string>
+    <string name="intercepted">Intercepted</string>
+    <string name="intercepts">Intercepts</string>
+    <string name="kicks">Kicks</string>
+    <string name="points">Points</string>
+    <string name="possessions">Possessions</string>
+    <!--runs, tackles defined above-->
+    <string name="tries">Tries</string>
+    <string name="mins_played">Minutes Played</string>
+    <string name="attacking_kicks">Attacking Kicks</string>
+    <string name="bombs_caught">Bombs Caught</string>
+    <string name="bombs_dropped">Bombs Dropped</string>
+    <string name="charged_down">Charged Down</string>
+    <string name="charges_down">Charges Down</string>
+    <string name="drop_outs">Drop Outs</string>
+    <string name="dummy_half_runs">Dummy Half Runs</string>
+    <string name="effective_offloads">Effective Offloads</string>
+    <!--  Fantasy points defined above  -->
+    <string name="field_goal_attempts">Field Goal Attempts</string>
+    <string name="field_goal_misses">Field Goal Misses</string>
+    <string name="field_goals">Field Goals</string>
+    <string name="forced_drop_outs">Forced Drop Outs</string>
+    <string name="general_play_pass">General Play Pass</string>
+    <string name="goal_misses">Goal Misses</string>
+    <string name="ineffective_tackles">Ineffective Tackles</string>
+    <string name="in_goal_escapes">In Goal Escapes</string>
+    <string name="interchanges_off">Interchanges Off</string>
+    <string name="interchanges_on">Interchanges On</string>
+    <string name="kick_errors">Kick Errors</string>
+    <string name="kick_metres">Kick Metres</string>
+    <string name="kick_return_metres">Kick Return Metres</string>
+    <string name="kick_returns">Kick Returns</string>
+    <string name="kicks_4020">Kicks 4020</string>
+    <string name="kicks_dead">Kicks Dead</string>
+    <!--  List to right   -->
+    <string name="last_touch_try_assists">Last Touch Try Assist</string>
+    <string name="line_break_assists">Line Break Assist</string>
+    <string name="line_break_causes">Line Break Causes</string>
+    <string name="line_breaks">Line Breaks</string>
+    <string name="line_engagements">Line Engagements</string>
+    <string name="long_kicks">Long Kicks</string>
+    <string name="missed_tackles">Missed Tackles</string>
+    <string name="off_loads">Off Loads</string>
+    <string name="one_pass_runs">One Pass Runs</string>
+    <string name="penalties_conceded">Penalties Conceded</string>
+    <string name="play_the_balls">Play The Balls</string>
+    <!--  Run metres defined above  -->
+    <string name="runs_7less_meters">Run 7 Less Meters</string>
+    <string name="runs_8plus_meters">Run 8 Plus Meters</string>
+    <string name="send_offs">Send Offs</string>
+    <string name="sin_bins">Sin Bins</string>
+    <string name="steals_one_on_one">Steals One On One</string>
+    <string name="stolen_one_on_one">Stolen One On One</string>
+    <string name="tackle_busts">Tackle Busts</string>
+    <string name="tackled_opp20">Tackled Opp20</string>
+    <string name="tackle_opp_half">Tackle Opp Half</string>
+    <string name="tackles_one_on_one">Tackles One On One</string>
+    <string name="try_assists">Tackles One On One</string>
+    <string name="try_causes">Try Causes</string>
+    <string name="try_contribution_percentage">Try Contribution Percentage</string>
+    <string name="try_contributions">Try Contributions</string>
+    <string name="try_involvements">Try Involvement</string>
+    <string name="twenty_metre_restarts">Twenty Metre Restarts</string>
+    <string name="weighted_kicks">Weighted Kicks</string>
+    <string name="post_contact_metres">Post Contact Metres</string>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="vertical_margin">16dp</dimen>
+    <dimen name="elevated_margin">16dp</dimen>
+    <dimen name="default_padding_margin">8dp</dimen>
+    <dimen name="small_padding_margin">4dp</dimen>
+    <dimen name="border_padding_margin">2dp</dimen>
+
+    <dimen name="image_width">120dp</dimen>
+    <dimen name="image_height">120dp</dimen>
+    <dimen name="image_height_long">240dp</dimen>
+    <dimen name="logo_width">100dp</dimen>
+    <dimen name="logo_height">100dp</dimen>
+    <dimen name="textview_maxwidth">200dp</dimen>
+</resources>
