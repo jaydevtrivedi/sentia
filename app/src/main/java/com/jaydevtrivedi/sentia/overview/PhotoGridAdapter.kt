@@ -8,9 +8,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.jaydevtrivedi.sentia.data.remote.models.Listings
 import com.jaydevtrivedi.sentia.databinding.ItemBinding
 
-class PhotoGridAdapter( private val onClickListener: OnClickListener ) : ListAdapter<Listings, PhotoGridAdapter.TopPlayerViewHolder>(DiffCallback) {
+class PhotoGridAdapter(private val onClickListener: OnClickListener) :
+    ListAdapter<Listings, PhotoGridAdapter.TopPlayerViewHolder>(DiffCallback) {
 
-    class TopPlayerViewHolder(private var binding: ItemBinding):
+    class TopPlayerViewHolder(private var binding: ItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(listings: Listings) {
             binding.listings = listings
@@ -21,7 +22,7 @@ class PhotoGridAdapter( private val onClickListener: OnClickListener ) : ListAda
     }
 
     companion object DiffCallback : DiffUtil.ItemCallback<Listings>() {
-        override fun areItemsTheSame(oldItem: Listings, newItem: Listings) : Boolean {
+        override fun areItemsTheSame(oldItem: Listings, newItem: Listings): Boolean {
             return oldItem === newItem
         }
 
@@ -30,8 +31,10 @@ class PhotoGridAdapter( private val onClickListener: OnClickListener ) : ListAda
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup,
-                                    viewType: Int): TopPlayerViewHolder {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    ): TopPlayerViewHolder {
         return TopPlayerViewHolder(ItemBinding.inflate(LayoutInflater.from(parent.context)))
     }
 

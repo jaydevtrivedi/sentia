@@ -2,11 +2,17 @@ package com.jaydevtrivedi.sentia.overview
 
 import android.app.Application
 import android.util.Log
-import androidx.lifecycle.*
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import com.jaydevtrivedi.sentia.data.remote.models.Json4Kotlin_Base
 import com.jaydevtrivedi.sentia.sentiaApplication
-import kotlinx.coroutines.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.launch
 
 enum class ApiStatus { LOADING, ERROR, DONE }
 
@@ -34,7 +40,7 @@ class OverviewViewModel(application: Application) : AndroidViewModel(application
 
 
     //  TODO test candidate
-    fun moveToDetailFragment(navController: NavController, listingId : String) {
+    fun moveToDetailFragment(navController: NavController, listingId: String) {
         //  TODO get details from onclick
         val action = OverviewDirections.actionOverviewToDetailFragment(listingId)
         navController.navigate(action)

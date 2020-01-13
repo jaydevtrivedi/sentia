@@ -3,7 +3,6 @@ package com.jaydevtrivedi.sentia
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.core.net.toUri
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -12,14 +11,13 @@ import com.bumptech.glide.request.RequestOptions
 import com.jaydevtrivedi.sentia.data.remote.models.Listings
 import com.jaydevtrivedi.sentia.overview.ApiStatus
 import com.jaydevtrivedi.sentia.overview.PhotoGridAdapter
-import kotlin.coroutines.coroutineContext
 
 
 @BindingAdapter("listData")
 fun bindRecyclerView(recyclerView: RecyclerView, data: List<Listings>?) {
     val adapter = recyclerView.adapter as PhotoGridAdapter
     adapter.submitList(data)
-    if (data.isNullOrEmpty()){
+    if (data.isNullOrEmpty()) {
         //  TODO error handling
     }
 }
@@ -62,7 +60,13 @@ fun bindStatus(textView: TextView, paramint: Int) {
 }
 
 @BindingAdapter("address", "address2", "suburb", "state")
-fun bindStatus(textView: TextView, address: String, address2: String, suburb: String, state: String) {
+fun bindStatus(
+    textView: TextView,
+    address: String,
+    address2: String,
+    suburb: String,
+    state: String
+) {
     val seperator = " "
     textView.text = address + seperator + address2 + seperator + suburb + seperator + state
 }

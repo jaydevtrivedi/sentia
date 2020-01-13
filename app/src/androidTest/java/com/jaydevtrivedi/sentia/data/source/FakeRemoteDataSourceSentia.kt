@@ -8,7 +8,7 @@ import com.jaydevtrivedi.sentia.overview.ApiStatus
 import org.mockito.Mockito
 
 
-class FakeRemoteDataSourceSentia() : DataSourceSentia {
+class FakeRemoteDataSourceSentia : DataSourceSentia {
 
     private val _status = MutableLiveData<ApiStatus>()
     override val status: LiveData<ApiStatus>

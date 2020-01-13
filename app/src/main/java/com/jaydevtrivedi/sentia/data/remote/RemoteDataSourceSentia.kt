@@ -1,15 +1,13 @@
 package com.jaydevtrivedi.sentia.data.remote
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.jaydevtrivedi.sentia.data.DataSourceSentia
 import com.jaydevtrivedi.sentia.data.remote.models.Json4Kotlin_Base
 import com.jaydevtrivedi.sentia.network.network
 import com.jaydevtrivedi.sentia.overview.ApiStatus
-import javax.inject.Inject
 
-class RemoteDataSourceSentia (val network: network) : DataSourceSentia {
+class RemoteDataSourceSentia(val network: network) : DataSourceSentia {
 
     private val _status = MutableLiveData<ApiStatus>()
     override val status: LiveData<ApiStatus>
