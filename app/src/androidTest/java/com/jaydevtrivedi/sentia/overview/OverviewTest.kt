@@ -64,19 +64,4 @@ class OverviewTest{
             OverviewDirections.actionOverviewToDetailFragment("20145184059")
         )
     }
-
-    @Test
-    fun loadEmptyDataSource() = runBlockingTest {
-
-        // GIVEN - On the home screen
-        val scenario = launchFragmentInContainer<Overview>(Bundle(), R.style.AppTheme)
-
-        val navController = Mockito.mock(NavController::class.java)
-        scenario.onFragment {
-            Navigation.setViewNavController(it.view!!, navController)
-        }
-        Thread.sleep(2000)
-
-    }
-
 }
